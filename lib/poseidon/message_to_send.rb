@@ -25,8 +25,6 @@ module Poseidon
     # @api public
     def initialize(topic, value, key = nil)
       raise ArgumentError, "Must provide a non-nil topic" if topic.nil?
-
-
       @topic  = topic
       @value  = value
       @key    = key
